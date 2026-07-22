@@ -1,8 +1,8 @@
 
-const { test } = require('@playwright/test');
+const { test , expect } = require('@playwright/test');
 const { LoginPage } = require('../pages/loginpage');
 
-test('Authenticate user', async ({ page }) => {
+test('Verify that user authentication is saved', async ({ page }) => {
 
     await page.goto('https://practicesoftwaretesting.com/auth/login');
 
@@ -12,9 +12,10 @@ test('Authenticate user', async ({ page }) => {
         'admin@practicesoftwaretesting.com',
         'welcome01'
     );
+    await expect(page).toHaveURL('https://practicesoftwaretesting.com/admin/dashboard');
 
     // Save authenticated state
     await page.context().storageState({
-        path: 'playwright/.auth/user.json'
+        path: 'playwright/.auth/admin.json'
     });
 });

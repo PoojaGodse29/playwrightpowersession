@@ -38,14 +38,46 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
-    {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] ,
-        storageState: 'playwright/.auth/user.json',
-        baseURL: 'https://practicesoftwaretesting.com',
-      },
-      
+  // Customer authentication
+  {
+    name: 'customer-setup',
+    testMatch: /.*auth\.customer\.setup\.spec\.js/,
+  },
+
+  // Admin authentication
+  {
+    name: 'admin-setup',
+    testMatch: /.*auth\.admin\.setup\.spec\.js/,
+  },
+
+  // Customer tests
+   {
+    name: 'customer',
+    testMatch: [
+      /.*cart\.spec\.js/,
+    ],
+    use: {
+      ...devices['Desktop Chrome'],
+      baseURL: 'https://practicesoftwaretesting.com',
+      storageState: 'playwright/.auth/customer.json',
     },
+    dependencies: ['customer-setup'],
+  },
+
+  // Admin tests
+ {
+    name: 'admin',
+    testMatch: [
+      /.*admintests\.spec\.js/,
+    ],
+    use: {
+      ...devices['Desktop Chrome'],
+      baseURL: 'https://practicesoftwaretesting.com',
+      storageState: 'playwright/.auth/admin.json',
+    },
+    dependencies: ['admin-setup'],
+  },
+  
 
     /*{
       name: 'firefox',

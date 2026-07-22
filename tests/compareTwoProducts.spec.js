@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('has title', async ({ page }) => {
+test('Verify that 2 products can be compared', async ({ page }) => {
   await page.goto('https://practicesoftwaretesting.com/');
   await page.getByAltText('Pliers', { exact: true }).click();
   await page.locator('[data-test="add-to-compare"]').click();

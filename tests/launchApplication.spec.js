@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('has title', async ({ page }) => {
+test('Verify that user can launch the application', async ({ page }) => {
   await page.goto('https://practicesoftwaretesting.com/');
   
   const title = await page.title();
