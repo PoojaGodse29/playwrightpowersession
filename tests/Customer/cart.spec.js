@@ -2,12 +2,11 @@ import { test, expect } from '@playwright/test';
 const { CartPage } = require('../../pages/cartpage');
 
 test('Verify that Add to Cart functionality works', async ({ page }) => {
-  console.log(await page.context().storageState());
   await page.goto('/');
   //console.log(page.url());
   const cartPage = new CartPage(page);
   await cartPage.addtocart();
-  await expect(page.locator('[data-test="product-name"]')).toHaveText('Pliers');
+  await expect(page.locator('[data-test="product-title"]')).toHaveText('Pliers');
 });
 
 
