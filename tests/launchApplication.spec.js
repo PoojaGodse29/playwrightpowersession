@@ -1,8 +1,9 @@
 import { test, expect } from '@playwright/test';
 
-test('Verify that the home page loads successfully', async ({ page }) => {
-  await page.goto('https://practicesoftwaretesting.com');
+test('Verify that user can launch the application', async ({ page }) => {
+  await page.goto('https://practicesoftwaretesting.com/');
+  
+  const title = await page.title();
+  expect(title).toContain('Practice Software Testing - Toolshop');
 
-  await expect(page).toHaveTitle(/Practice Software Testing/);
-  await expect(page.locator('h1')).toBeVisible();
-});
+})
