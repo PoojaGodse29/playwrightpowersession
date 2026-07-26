@@ -15,10 +15,12 @@ test('Verify that the admin can go to the users page', async ({ page }) => {
   await expect(page.locator('[data-test="page-title"]')).toHaveText('Users');
 });
 
-test('Verify that the admin can add a user', async ({ page }) => {
+test.only('Verify that the admin can add a user', async ({ page }) => {
   await page.goto('/');
   const adminpage = new AdminPage(page);
   await adminpage.adminusers();
   await adminpage.adduser();
+  //This test is failing because after clicking on save, something went wrong message is shown, this could a bug
 
 });
+

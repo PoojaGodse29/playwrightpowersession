@@ -1,0 +1,138 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - text: View the
+      - link "Documentation" [ref=e4] [cursor=pointer]:
+        - /url: https://testsmith-io.github.io/practice-software-testing/#/
+      - text: for this application.
+    - generic [ref=e5]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: Practice Black Box Testing & Bug Hunting
+        - button "Testing Guide" [ref=e9] [cursor=pointer]
+        - button "🐛 Bug Hunting" [ref=e10] [cursor=pointer]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Practice Software Testing - Toolshop" [ref=e13] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e32]:
+            - menubar "Main menu" [ref=e33]:
+              - menuitem [ref=e34]:
+                - link "Home" [ref=e35] [cursor=pointer]:
+                  - /url: /
+              - menuitem [ref=e36]:
+                - button "Categories" [ref=e37] [cursor=pointer]
+              - menuitem [ref=e38]:
+                - link "Contact" [ref=e39] [cursor=pointer]:
+                  - /url: /contact
+              - menuitem [ref=e40]:
+                - link "Sign in" [ref=e41] [cursor=pointer]:
+                  - /url: /auth/login
+              - menuitem [ref=e156]:
+                - link "cart" [ref=e157] [cursor=pointer]:
+                  - /url: /checkout
+                  - generic [ref=e161]: "1"
+            - button "Select language" [ref=e43] [cursor=pointer]: EN
+    - generic [ref=e48]:
+      - generic [ref=e49]:
+        - figure [ref=e51]:
+          - img "Pliers" [ref=e53]
+          - generic [ref=e54]:
+            - text: Photo by
+            - link "Everyday basics" [ref=e55] [cursor=pointer]:
+              - /url: https://unsplash.com/@zanardi
+            - text: "on"
+            - link "Unsplash" [ref=e56] [cursor=pointer]:
+              - /url: https://unsplash.com/photos/I8eTuMmxIfo
+            - text: .
+        - generic [ref=e57]:
+          - heading "Pliers" [level=1] [ref=e58]
+          - paragraph [ref=e59]:
+            - generic "category" [ref=e60]: Pliers
+            - generic "brand" [ref=e61]: ForgeFlex Tools
+          - generic [ref=e62]: $12.01
+          - generic "A = most environmentally friendly, E = higher environmental impact" [ref=e64]:
+            - text: "CO₂:"
+            - generic [ref=e65]: A
+            - generic [ref=e66]: B
+            - generic [ref=e67]: C
+            - generic [ref=e68]: D
+            - generic [ref=e69]: E
+          - paragraph [ref=e70]: Reliable general-purpose pliers crafted from drop-forged carbon steel for long-lasting durability in demanding working conditions. The serrated jaws provide a firm grip on a variety of materials including wire, nails, small fasteners, and irregularly shaped objects. Comfortable rubber-coated handles absorb vibration and reduce hand fatigue during extended use, while the non-slip surface ensures confident handling. The precision pivot joint maintains alignment under load, delivering smooth, controlled jaw action with every squeeze. Heat-treated steel construction resists wear and deformation even under heavy use. A must-have foundational tool for any workshop, equally suited for professional tradespeople and home repair projects.
+          - generic [ref=e71]:
+            - button "Decrease quantity" [ref=e72] [cursor=pointer]
+            - generic [ref=e76]: Quantity
+            - spinbutton "Quantity" [ref=e77]: "1"
+            - button "Increase quantity" [ref=e78] [cursor=pointer]
+          - generic [ref=e82]:
+            - button [active] [ref=e83] [cursor=pointer]
+            - button [ref=e87] [cursor=pointer]
+            - button [ref=e91] [cursor=pointer]
+      - generic [ref=e96]:
+        - heading "Specifications" [level=3] [ref=e97]
+        - table [ref=e98]:
+          - rowgroup [ref=e99]:
+            - row [ref=e100]:
+              - cell "Handle Material" [ref=e101]
+              - cell "Rubber" [ref=e102]
+            - row [ref=e103]:
+              - cell "Length" [ref=e104]
+              - cell "180mm" [ref=e105]
+            - row [ref=e106]:
+              - cell "Material" [ref=e107]
+              - cell "Carbon Steel" [ref=e108]
+            - row [ref=e109]:
+              - cell "Warranty" [ref=e110]
+              - cell "1years" [ref=e111]
+            - row [ref=e112]:
+              - cell "Weight" [ref=e113]
+              - cell "280g" [ref=e114]
+      - separator [ref=e115]
+      - generic [ref=e116]:
+        - heading "Related products" [level=2] [ref=e117]
+        - generic [ref=e119]:
+          - link [ref=e120] [cursor=pointer]:
+            - /url: /product/01KYD6YRX6K7GXZ1BBJ8KHTAX3
+            - img "Combination Pliers" [ref=e122]
+            - generic [ref=e123]:
+              - heading "Combination Pliers" [level=5] [ref=e124]
+              - link "More information" [ref=e125]:
+                - /url: "#"
+          - link [ref=e126] [cursor=pointer]:
+            - /url: /product/01KYD6YRXMW214NCEHYH81EY9V
+            - img "Bolt Cutters" [ref=e128]
+            - generic [ref=e129]:
+              - heading "Bolt Cutters" [level=5] [ref=e130]
+              - link "More information" [ref=e131]:
+                - /url: "#"
+          - link [ref=e132] [cursor=pointer]:
+            - /url: /product/01KYD6YRXP1EFFTZGKS0TX7KNH
+            - img "Long Nose Pliers" [ref=e134]
+            - generic [ref=e135]:
+              - heading "Long Nose Pliers" [level=5] [ref=e136]
+              - link "More information" [ref=e137]:
+                - /url: "#"
+          - link [ref=e138] [cursor=pointer]:
+            - /url: /product/01KYD6YRXRQ3DH9RE8B9TRABTC
+            - img "Slip Joint Pliers" [ref=e140]
+            - generic [ref=e141]:
+              - heading "Slip Joint Pliers" [level=5] [ref=e142]
+              - link "More information" [ref=e143]:
+                - /url: "#"
+    - contentinfo [ref=e145]:
+      - generic [ref=e146]:
+        - text: This is a DEMO application (
+        - link "GitHub repo" [ref=e147] [cursor=pointer]:
+          - /url: https://github.com/testsmith-io/practice-software-testing
+        - text: ), used for software testing training purpose. |
+        - link "Privacy Policy" [ref=e148] [cursor=pointer]:
+          - /url: /privacy
+        - text: "| Banner photo by"
+        - link "Barn Images" [ref=e149] [cursor=pointer]:
+          - /url: https://unsplash.com/@barnimages
+        - text: "on"
+        - link "Unsplash" [ref=e150] [cursor=pointer]:
+          - /url: https://unsplash.com/photos/t5YUoHW6zRo
+        - text: .
+      - generic [ref=e151]: v2.3 | Built 2026-07-17 | Angular 20.0.5
+    - button "Open chat" [ref=e153] [cursor=pointer]
+  - alert "Product added to shopping cart." [ref=e163]
